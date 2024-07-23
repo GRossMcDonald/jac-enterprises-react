@@ -15,7 +15,7 @@ public class Jac {
 
     private String image;
 
-    @Column(length = 1000)
+    @Column(length = 10000)
     private String caption;
 
     public Jac() {
