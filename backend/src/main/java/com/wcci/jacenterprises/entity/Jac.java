@@ -1,5 +1,6 @@
 package com.wcci.jacenterprises.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -10,17 +11,21 @@ public class Jac {
     @GeneratedValue
     private Long id;
 
-    private String topic;
+    private String title;
 
-    private String text;
+    private String image;
+
+    @Column(length = 1000)
+    private String caption;
 
     public Jac() {
 
     }
 
-    public Jac(String topic, String text) {
-        this.topic = topic;
-        this.text = text;
+    public Jac(String title, String image, String caption) {
+        this.title = title;
+        this.image = image;
+        this.caption = caption;
     }
 
     public Long getId() {
@@ -31,19 +36,27 @@ public class Jac {
         this.id = id;
     }
 
-    public String getTopic() {
-        return topic;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTopic(String topic) {
-        this.topic = topic;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getText() {
-        return text;
+    public String getImage() {
+        return image;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCaption() {
+        return caption;
+    }
+
+    public void setCaption(String caption) {
+        this.caption = caption;
     }
 }
