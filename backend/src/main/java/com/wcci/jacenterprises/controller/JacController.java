@@ -16,7 +16,7 @@ import com.wcci.jacenterprises.entity.Jac;
 import com.wcci.jacenterprises.repository.JacRepository;
 
 @RestController
-@RequestMapping("/api/nasa")
+@RequestMapping("/api/explore")
 public class JacController {
 
     @Autowired
