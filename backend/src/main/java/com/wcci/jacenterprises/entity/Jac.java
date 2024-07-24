@@ -11,8 +11,10 @@ public class Jac {
     @GeneratedValue
     private Long id;
 
+    @Column
     private String title;
 
+    @Column
     private String image;
 
     @Column(length = 10000)

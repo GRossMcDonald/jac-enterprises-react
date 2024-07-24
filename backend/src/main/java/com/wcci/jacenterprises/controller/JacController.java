@@ -38,6 +38,7 @@ public class JacController {
         if (apod == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
+        
         return ResponseEntity.ok(apod);
     }
 
