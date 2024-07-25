@@ -18,3 +18,14 @@
     background-color: black;
   }
 }
+
+.Background {
+  position: fixed;
+  top: 50px;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}

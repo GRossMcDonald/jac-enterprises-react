@@ -1,31 +1,14 @@
 import React from "react";
 import "./Contact.css";
+import Navbar from "./Navbar";
+import Background from "./Background";
+import "./Background.css";
 
 function Contact() {
   return (
     <div className="contact-container">
-      <div className="nav-bar">
-        <nav>
-          <ul>
-            <li className="nav-item">Explore</li>
-            <li className="nav-item">
-              <a href="Funnies.js" className="link">
-                Funnies
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="Contact.js" className="link">
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="About.js" className="link">
-                About
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Navbar />
+      <Background />
       <div className="contact-info">
         <h1 className="contact-header">Contact Us!</h1>
         <div className="contact-list">
