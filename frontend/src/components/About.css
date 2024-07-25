@@ -1,0 +1,20 @@
+.bio-container {
+  text-align: center;
+  background-image: url("../img/Galaxy.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.about-info {
+  background-color: rgba(255, 255, 255, 0.342);
+  border: 3px solid black;
+  padding: auto;
+  margin: auto;
+  width: 50%;
+}
+
+h2 {
+  font-weight: 400;
+}
