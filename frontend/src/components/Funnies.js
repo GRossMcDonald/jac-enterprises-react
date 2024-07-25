@@ -11,11 +11,17 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
   return (
     <div className="Funnies">
       <Navbar />
-      <div className="laughing-kids-container">
-        <LaughingKidsImage />
-      </div>
-      <div className="generate-joke-button-container">
-        <FetchNewJokeButton setJoke={setJoke} />
+      <div className="content">
+        <div className="horizontal">
+          <div className="laughing-kids-container">
+            <div className="laughing-kids">
+              <LaughingKidsImage />
+            </div>
+          </div>
+          <div className="generate-joke-button-container">
+            <FetchNewJokeButton setJoke={setJoke} />
+          </div>
+        </div>
       </div>
       {/*
         <div className="joke-container">
