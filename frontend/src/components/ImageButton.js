@@ -28,7 +28,7 @@ function ImageButton({ setTitle, setImage, setCaption }) {
   };
 
   return (
-    <button className="explore-buttons" onClick={fetchApod}>
+    <button className="button" onClick={fetchApod}>
       Get Astronomy Fact
     </button>
   );

@@ -28,9 +28,9 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
               <div className="save-joke-button-container">
                 <SaveJokeButton joke={joke} setFavorites={setFavorites} />
               </div>
-              <div className="favorite-jokes-list-container">
-                <ListOfFavoriteJokes favorites={favorites} />
-              </div>
+            </div>
+            <div className="favorite-jokes-list-container">
+              <ListOfFavoriteJokes favorites={favorites} />
             </div>
           </div>
         </div>

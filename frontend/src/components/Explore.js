@@ -16,7 +16,7 @@ function Explore({
     <div className="explore-container">
       <Navbar />
       <div className="content">
-        <div className="explore buttons">
+        <div className="explore-buttons">
           <div className="save-button">
             <SaveButton
               nasaTitle={nasaTitle}

@@ -26,7 +26,7 @@ function SaveButton({ nasaTitle, nasaImage, nasaCaption }) {
   };
 
   return (
-    <button className="explore-buttons" onClick={saveApod}>
+    <button className="button" onClick={saveApod}>
       Save as Favorite
     </button>
   );
