@@ -10,7 +10,7 @@ li {
 .navbar {
   height: 70px;
   width: 100vw;
-  background-color: rgb(9, 26, 26);
+  background-color: rgb(4, 12, 12);
   display: flex;
   justify-content: space-between;
   align-items: center;
