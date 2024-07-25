@@ -30,3 +30,10 @@
   top: 70px;
   width: 100vw;
 }
+
+.Funnies .generate-joke-button-container {
+  position: relative;
+  top: 10px;
+  background-color: red;
+  width: fit-content;
+}

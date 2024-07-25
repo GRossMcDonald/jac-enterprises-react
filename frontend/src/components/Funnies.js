@@ -14,17 +14,21 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
       <div className="laughing-kids-container">
         <LaughingKidsImage />
       </div>
+      <div className="generate-joke-button-container">
+        <FetchNewJokeButton setJoke={setJoke} />
+      </div>
       {/*
         <div className="joke-container">
           <p id="joke">{joke}</p>
         </div>
         <div className="buttons">
-          <SaveJokeButton joke={joke} />
-          <FetchNewJokeButton setJoke={setJoke} />
           <ShowFavoriteJokesButton setFavorites={setFavorites} />
         </div>
         <div className="favorite-jokes-container">
           <ListOfFavoriteJokes favorites={favorites} />
+        </div>
+        <div className="save-joke-button-container">
+          <SaveJokeButton joke={joke} />
         </div>
       */}
     </div>
