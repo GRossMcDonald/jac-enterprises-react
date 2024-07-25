@@ -24,8 +24,22 @@ function Explore({
           />
         </div>
         <h2 className="title">{nasaTitle}</h2>
-        <img className="image" src={nasaImage} alt="Space Image" />
-        <p className="caption">{nasaCaption}</p>
+        {!nasaImage ? (
+          <img
+            className="image"
+            src={require("./images/explore.png")}
+            alt="Space"
+          />
+        ) : (
+          <img className="image" src={nasaImage} alt="Space" />
+        )}
+        {!nasaCaption ? (
+          <p className="caption">
+            Today's astronomical wonders are just a button click away.
+          </p>
+        ) : (
+          <p className="caption">{nasaCaption}</p>
+        )}
         <div className="save-button">
           <SaveButton
             nasaTitle={nasaTitle}
