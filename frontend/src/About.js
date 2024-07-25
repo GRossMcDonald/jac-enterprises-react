@@ -5,7 +5,7 @@ function About() {
     <div className="bio-container">
       <h1>Meet Our Team!</h1>
       <div className="Deidra">
-        <h2>Diedra Zamonski-Blake</h2>
+        <h2>Deidra Zamonski-Blake</h2>
         <p>Bio filler</p>
       </div>
       <div className="Ross">
