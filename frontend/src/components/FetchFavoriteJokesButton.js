@@ -1,8 +1,8 @@
 import React from "react";
-import "./FetchJokesButton.css";
+import "./FetchFavoriteJokesButton.css";
 
-function FetchJokesButton() {
-  const fetchJokes = ({ setFavorites }) => {
+function FetchFavoriteJokesButton({ setFavorites }) {
+  const setFavoriteJokes = ({ setFavorites }) => {
     fetch("http://localhost:8080/api/jokes")
       .then((response) => {
         if (!response.ok) {
@@ -21,10 +21,10 @@ function FetchJokesButton() {
   };
 
   return (
-    <button className="fetch-jokes" onClick={fetchJokes}>
+    <button className="funnies-buttons" onClick={setFavoriteJokes}>
       Show Favorite Jokes
     </button>
   );
 }
 
-export default FetchJokesButton;
+export default FetchFavoriteJokesButton;

@@ -1,1 +1,11 @@
+.test {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+}
 
+.joke-container {
+  width: 100vw;
+}
