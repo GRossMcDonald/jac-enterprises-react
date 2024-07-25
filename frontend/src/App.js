@@ -5,6 +5,7 @@ import "./components/Funnies.css";
 import Funnies from "./components/Funnies";
 import Home from "./components/Home";
 import Explore from "./components/Explore";
+import Contact from "./components/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -32,8 +33,9 @@ function App() {
               />
             }
           />
+          <Route path="/contact" element={<Contact />} />
           {/* 
-              <Route path="/contact" element={<Contact />} />
+              
               <Route path="/about" element={<About />} />
              */}
         </Routes>
