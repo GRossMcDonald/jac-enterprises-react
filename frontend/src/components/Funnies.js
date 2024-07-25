@@ -11,14 +11,16 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
     <div className="Funnies">
       <Navbar />
       <div className="joke-container">
-        <p id="testing-joke">{joke}</p>
+        <p id="joke">{joke}</p>
       </div>
-      <div className="test">
+      <div className="buttons">
         <SaveJokeButton joke={joke} />
         <FetchNewJokeButton setJoke={setJoke} />
         <ShowFavoriteJokesButton setFavorites={setFavorites} />
       </div>
-      <ListOfFavoriteJokes favorites={favorites} />
+      <div className="favorite-jokes-container">
+        <ListOfFavoriteJokes favorites={favorites} />
+      </div>
     </div>
   );
 }

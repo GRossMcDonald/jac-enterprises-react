@@ -1,4 +1,4 @@
-.test {
+.buttons {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
@@ -13,22 +13,6 @@
   text-align: center;
 }
 
-#testing-joke {
+#joke {
   color: black;
-}
-
-.jokes-list-container {
-  width: 100vw;
-  height: 500px;
-  position: relative;
-  top: 200px;
-  text-align: center;
-  color: black;
-}
-
-.jokes-list {
-  position: relative;
-  top: 200px;
-  height: 50px;
-  text-align: center;
 }

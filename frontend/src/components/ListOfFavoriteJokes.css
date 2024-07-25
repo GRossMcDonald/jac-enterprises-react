@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ListOfFavoriteJokes {
+  height: 500px;
+  text-align: center;
+  color: black;
+}
+
+.jokes-list {
+  position: relative;
+  top: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: red;
+}
