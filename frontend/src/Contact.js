@@ -38,7 +38,7 @@ function Contact() {
             </li>
             <li className="contact-item">
               Ross McDonald:
-              <a href="mailto:Ross_McDonald@outlook.com" className="email-link">
+              <a href="mailto:Ross_McDonald@gmail.com" className="email-link">
                 Send E-mail
               </a>
             </li>
