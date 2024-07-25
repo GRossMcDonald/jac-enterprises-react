@@ -1,13 +1,10 @@
 import React from "react";
-import { useState } from "react";
 import Navbar from "./Navbar";
 import FetchFavoriteJokesButton from "./FetchFavoriteJokesButton";
 import FetchNewJokeButton from "./FetchNewJokeButton";
 import SaveJokeButton from "./SaveJokeButton";
 
-function Funnies() {
-  const [joke, setJoke] = useState("");
-
+function Funnies({ joke, setJoke, favorites, setFavorite }) {
   return (
     <div className="Funnies">
       <Navbar />
@@ -15,9 +12,9 @@ function Funnies() {
         <p>{joke}</p>
       </div>
       <div className="test">
-        <SaveJokeButton />
+        <SaveJokeButton joke={joke} />
         <FetchNewJokeButton setJoke={setJoke} />
-        <FetchFavoriteJokesButton />
+        <FetchFavoriteJokesButton favorites={favorites} />
       </div>
     </div>
   );
