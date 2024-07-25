@@ -8,4 +8,27 @@
 
 .joke-container {
   width: 100vw;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+#testing-joke {
+  color: black;
+}
+
+.jokes-list-container {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  color: black;
+}
+
+.jokes-list {
+  position: relative;
+  top: 200px;
+  height: 50px;
+  text-align: center;
 }

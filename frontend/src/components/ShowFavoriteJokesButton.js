@@ -1,13 +1,14 @@
 import React from "react";
-import "./FetchFavoriteJokesButton.css";
+import "./ShowFavoriteJokesButton.css";
 
-function FetchFavoriteJokesButton({ setFavorites }) {
-  const setFavoriteJokes = ({ setFavorites }) => {
+function ShowFavoriteJokesButton({ setFavorites }) {
+  const fetchFavorites = () => {
     fetch("http://localhost:8080/api/jokes")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not okay.");
         }
+
         return response.json();
       })
       .then((data) => {
@@ -21,10 +22,10 @@ function FetchFavoriteJokesButton({ setFavorites }) {
   };
 
   return (
-    <button className="funnies-buttons" onClick={setFavoriteJokes}>
+    <button className="funnies-buttons" onClick={fetchFavorites}>
       Show Favorite Jokes
     </button>
   );
 }
 
-export default FetchFavoriteJokesButton;
+export default ShowFavoriteJokesButton;
