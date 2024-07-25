@@ -1,0 +1,45 @@
+.nav-bar {
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.Contact .contact-container {
+  background-image: url("./img/Satellite.jpg");
+}
+
+.contact-info {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  justify-content: center;
+}
+.contact-header {
+  font-weight: 300;
+}
+
+.contact-item {
+  display: inline;
+  padding: 5px;
+  margin: 3px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
