@@ -11,11 +11,7 @@ li {
 
 .link {
   text-decoration: none;
-  color: black;
-}
-
-.Contact .contact-container {
-  background-image: url("./img/Satellite.jpg");
+  color: white;
 }
 
 .contact-info {
