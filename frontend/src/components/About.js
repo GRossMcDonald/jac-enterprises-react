@@ -11,7 +11,11 @@ function About() {
         <ul>
           <li>
             <h2>Deidra Zamonski-Blake</h2>
-            <img className="bio-pic" src="../img/Deidra.png" alt="Deidra"></img>
+            <img
+              src={require("../img/Deidra.png")}
+              alt="Deidra"
+              width="200px"
+            />
             <p className="bio">
               Deidra is an entry-level full-stack web developer located in
               Columbus, OH. She and her husband of three years, Christopher, had
@@ -22,8 +26,7 @@ function About() {
           <li>
             <h2>Ross McDonald</h2>
             <img
-              className="bio-pic"
-              src="./img/Ross.png"
+              src={require("../img/Ross.png")}
               alt="Ross"
               width="200px"
             ></img>
