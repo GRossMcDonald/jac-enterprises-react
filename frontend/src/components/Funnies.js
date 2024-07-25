@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import LaughingKidsImage from "./LaughingKidsImage";
-import ShowFavoriteJokesButton from "./ShowFavoriteJokesButton";
 import FetchNewJokeButton from "./FetchNewJokeButton";
 import SaveJokeButton from "./SaveJokeButton";
 import ListOfFavoriteJokes from "./ListOfFavoriteJokes";
@@ -18,8 +17,21 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
               <LaughingKidsImage />
             </div>
           </div>
-          <div className="generate-joke-button-container">
-            <FetchNewJokeButton setJoke={setJoke} />
+          <div className="buttons-and-text-container">
+            <div className="joke-text-container">
+              <p>{joke}</p>
+            </div>
+            <div className="buttons-container">
+              <div className="joke-button-container">
+                <FetchNewJokeButton setJoke={setJoke} />
+              </div>
+              <div className="save-joke-button-container">
+                <SaveJokeButton joke={joke} setFavorites={setFavorites} />
+              </div>
+              <div className="favorite-jokes-list-container">
+                <ListOfFavoriteJokes favorites={favorites} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -33,9 +45,7 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
         <div className="favorite-jokes-container">
           <ListOfFavoriteJokes favorites={favorites} />
         </div>
-        <div className="save-joke-button-container">
-          <SaveJokeButton joke={joke} />
-        </div>
+        
       */}
     </div>
   );
