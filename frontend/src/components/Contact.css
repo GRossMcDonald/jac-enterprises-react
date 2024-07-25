@@ -1,41 +1,33 @@
-.nav-bar {
-  text-align: right;
-  padding: 5px;
-  margin: 5px;
-}
-
-li {
-  list-style: none;
-  text-decoration: none;
-}
-
-.link {
-  text-decoration: none;
-  color: white;
+.contact-container {
+  text-align: center;
+  background-image: url("../img/Satellite.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .contact-info {
-  width: 100%;
-  padding: 8px;
-  text-align: center;
-  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.342);
+  border: 3px solid black;
+  padding: auto;
+  margin: auto;
+  width: 50%;
+  padding-top: 50px;
 }
-.contact-header {
+
+li {
+  padding: 20px;
   font-weight: 300;
 }
 
-.contact-item {
-  display: inline;
-  padding: 5px;
-  margin: 3px;
-  font-weight: 300;
-  font-size: 20px;
+h2 {
+  font-size: 25px;
+  font-weight: 350;
 }
 
-a {
+.email-link {
   color: black;
-}
-
-a:hover {
-  color: white;
+  font-size: 20px;
+  text-decoration: underline;
 }
