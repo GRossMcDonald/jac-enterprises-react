@@ -16,3 +16,17 @@
 #joke {
   color: black;
 }
+
+.laughing-kids-container {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.Funnies {
+  background-color: rgb(217, 217, 217);
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  width: 100vw;
+}
