@@ -18,8 +18,11 @@
 .image-button,
 .save-button {
   padding: 1.5em;
-  width: auto;
-  cursor: pointer;
+}
+
+.explore-buttons {
+  padding: 1em;
+  border-radius: .5em;
 }
 
 .title {

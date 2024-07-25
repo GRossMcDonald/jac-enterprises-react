@@ -21,7 +21,7 @@ function SaveButton({ nasaTitle, nasaImage, nasaCaption }) {
       });
   };
 
-  return <button onClick={saveApod}>Save as Favorite</button>;
+  return <button className="explore-buttons" onClick={saveApod}>Save as Favorite</button>;
 }
 
 export default SaveButton;
