@@ -1,45 +1,36 @@
-.nav-bar {
-  text-align: right;
-  padding: 5px;
-  margin: 5px;
+.contact-container {
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  /* background-image: url("../img/SatelliteCartoon.jpg"); */
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
-
-li {
-  list-style: none;
-  text-decoration: none;
-}
-
-.link {
-  text-decoration: none;
-  color: black;
-}
-
-/*.Contact .contact-container {
-   background-image: url("./img/Satellite.jpg"); 
-}*/
 
 .contact-info {
-  width: 100%;
-  padding: 8px;
-  text-align: center;
-  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.266);
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: auto;
+  margin: auto;
+  width: 50%;
+  padding-top: 50px;
 }
-.contact-header {
+
+.contact-info li {
+  padding: 20px;
   font-weight: 300;
 }
 
-.contact-item {
-  display: inline;
-  padding: 5px;
-  margin: 3px;
-  font-weight: 300;
-  font-size: 20px;
+h2 {
+  font-size: 25px;
+  font-weight: 350;
 }
 
-.content a {
+.email-link {
   color: black;
-}
-
-.content a:hover {
-  color: white;
+  font-size: 20px;
+  text-decoration: underline;
 }

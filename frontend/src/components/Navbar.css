@@ -147,8 +147,8 @@ li {
     display: block;
   }
 
-  .hamburger .bar {
-    transition: 0.3s; /***Just defining transition time for toggling hamburger active (0.3s is default so this isn't really needed, but just in case(?)***/
+  .navbar {
+    background-color: #001b2a;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -161,18 +161,5 @@ li {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-
-  /*Just specified further because it wasn't changing for me*/
-  .homelink-container.titillium-title {
-    font-size: 30px;
-  }
-
-  .homelink-container {
-    margin-left: 35px;
-  }
-
-  .hamburger {
-    margin-right: -10px;
   }
 }
