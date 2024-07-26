@@ -13,21 +13,18 @@
 }
 
 .about-info {
-  background-color: rgba(255, 255, 255, 0.266);
+  background-color: rgba(255, 255, 255, 0.466);
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: auto;
   margin: auto;
-  width: 50%;
-  padding-top: 40px;
+  width: 40%;
 }
 
-.student {
+li {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin: auto;
-  padding: 70px 0;
 }
 
 .student-name {
@@ -40,12 +37,12 @@ h2 {
 
 img {
   border: 3px solid black;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 p {
   font-family: "Titillium Web", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   width: 50%;
 }
