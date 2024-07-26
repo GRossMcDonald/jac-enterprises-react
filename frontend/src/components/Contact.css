@@ -14,9 +14,9 @@ li {
   color: black;
 }
 
-.Contact .contact-container {
-  background-image: url("./img/Satellite.jpg");
-}
+/*.Contact .contact-container {
+   background-image: url("./img/Satellite.jpg"); 
+}*/
 
 .contact-info {
   width: 100%;
@@ -36,10 +36,10 @@ li {
   font-size: 20px;
 }
 
-a {
+.content a {
   color: black;
 }
 
-a:hover {
+.content a:hover {
   color: white;
 }

@@ -5,14 +5,15 @@ import "./components/Funnies.css";
 import Funnies from "./components/Funnies";
 import Home from "./components/Home";
 import Explore from "./components/Explore";
+import Contact from "./components/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [nasaTitle, setTitle] = useState("");
   const [nasaImage, setImage] = useState("");
   const [nasaCaption, setCaption] = useState("");
-  
-  
+  const [joke, setJoke] = useState("");
+  const [favorites, setFavorites] = useState([]);
 
   return (
     <>
@@ -20,23 +21,32 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/funnies" element={<Funnies />} />
           <Route
-              path="/explore"
-              element={
-                <Explore
-                  setTitle={setTitle}
-                  setImage={setImage}
-                  setCaption={setCaption}
-                  nasaTitle={nasaTitle}
-                  nasaImage={nasaImage}
-                  nasaCaption={nasaCaption}
-                />
-              }
-            />
-
+            path="/funnies"
+            element={
+              <Funnies
+                joke={joke}
+                setJoke={setJoke}
+                favorites={favorites}
+                setFavorites={setFavorites}
+              />
+            }
+          />
+          <Route
+            path="/explore"
+            element={
+              <Explore
+                setTitle={setTitle}
+                setImage={setImage}
+                setCaption={setCaption}
+                nasaTitle={nasaTitle}
+                nasaImage={nasaImage}
+                nasaCaption={nasaCaption}
+              />
+            }
+          />
           {/* 
-              <Route path="/contact" element={<Contact />} />
+              
               <Route path="/about" element={<About />} />
              */}
         </Routes>

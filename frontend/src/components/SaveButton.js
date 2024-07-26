@@ -7,7 +7,11 @@ function SaveButton({ nasaTitle, nasaImage, nasaCaption }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ title: nasaTitle, image: nasaImage, caption: nasaCaption }),
+      body: JSON.stringify({
+        title: nasaTitle,
+        image: nasaImage,
+        caption: nasaCaption,
+      }),
     })
       .then((response) => {
         if (!response) {
@@ -21,7 +25,11 @@ function SaveButton({ nasaTitle, nasaImage, nasaCaption }) {
       });
   };
 
-  return <button className="explore-buttons" onClick={saveApod}>Save as Favorite</button>;
+  return (
+    <button className="explore-buttons" onClick={saveApod}>
+      Save as Favorite
+    </button>
+  );
 }
 
 export default SaveButton;
