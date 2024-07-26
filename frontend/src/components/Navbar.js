@@ -28,7 +28,7 @@ function Navbar() {
           </Link>
         </ul>
       </div>
-      <div className="hamburger">
+      <div className="hamburger no-user-select">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>

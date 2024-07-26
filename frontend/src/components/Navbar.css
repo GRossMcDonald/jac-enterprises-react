@@ -117,7 +117,7 @@ li {
   }
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 920px) {
   .navlinks,
   .navlinks-container {
     display: none;
@@ -126,10 +126,6 @@ li {
   .navbar .hamburger,
   .navbar .bar {
     display: block;
-  }
-
-  .navbar {
-    background-color: #001b2a;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -142,5 +138,17 @@ li {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .titillium-title {
+    font-size: 30px;
+  }
+
+  .homelink-container {
+    margin-left: 35px;
+  }
+
+  .hamburger {
+    margin-right: -10px;
   }
 }
