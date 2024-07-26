@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 .Funnies {
-  background-color: rgb(170, 170, 170);
-  height: calc(100vh - 70px);
+  background-color: #073700;
+  height: calc(100vh - 65px);
   position: fixed;
-  top: 70px;
+  top: 65px;
   width: 100vw;
 }
 
@@ -18,19 +18,23 @@
   display: flex;
   flex-direction: row;
   width: 100vw;
+  height: 100%;
   justify-content: space-between;
   position: absolute;
   top: 7%;
 }
 
-.laughing-kids-container {
-  position: relative;
-  left: 5%;
-  float: left;
+.left-horizontal {
+  width: calc(400px + 5%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5%;
 }
 
 .buttons-and-text-container {
   position: relative;
+  padding-top: 1%;
   width: calc(100% - 400px - 5%);
   display: flex;
   flex-direction: column;
@@ -46,7 +50,7 @@
 }
 
 .joke-text-container {
-  height: 200px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -61,4 +65,50 @@
   border-radius: 10px;
   border: solid white 5px;
   width: 90%;
+}
+
+.buttons-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.favorite-jokes-list-container {
+  margin-top: 20px;
+  background-color: #f34213;
+  height: 36vh;
+  border-radius: 10px;
+  border: solid white 5px;
+  width: 90%;
+  overflow-y: scroll;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 15px 20px 20px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#jokes-list-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.jokes-list-title-container {
+  background-color: #696969;
+  width: 40%;
+  height: 90%;
+  text-align: center;
+  border: 5px white solid;
+  border-radius: 10px;
+}
+
+.jokes-list-title-positioner {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }

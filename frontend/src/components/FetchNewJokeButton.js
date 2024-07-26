@@ -24,6 +24,10 @@ function FetchNewJokeButton({ setJoke }) {
       });
   };
 
-  return <button onClick={fetchNewJoke}>Get Dad Joke</button>;
+  return (
+    <button id="joke-button" onClick={fetchNewJoke}>
+      <p>NEW JOKE</p>
+    </button>
+  );
 }
 export default FetchNewJokeButton;

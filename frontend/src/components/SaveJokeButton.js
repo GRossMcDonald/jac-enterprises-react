@@ -43,7 +43,9 @@ function SaveJokeButton({ joke, setFavorites }) {
   };
 
   return (
-    <button onClick={saveJokeAndFetchFavoriteJokes}>Save as Favorite</button>
+    <button id="save-joke-button" onClick={saveJokeAndFetchFavoriteJokes}>
+      <p>SAVE JOKE</p>
+    </button>
   );
 }
 

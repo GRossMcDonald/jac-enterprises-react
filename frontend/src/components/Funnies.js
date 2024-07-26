@@ -12,9 +12,11 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
       <Navbar />
       <div className="content">
         <div className="horizontal">
-          <div className="laughing-kids-container">
-            <div className="laughing-kids">
-              <LaughingKidsImage />
+          <div className="left-horizontal">
+            <div className="laughing-kids-container">
+              <div className="laughing-kids">
+                <LaughingKidsImage />
+              </div>
             </div>
           </div>
           <div className="buttons-and-text-container">
@@ -30,6 +32,11 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
               </div>
             </div>
             <div className="favorite-jokes-list-container">
+              <div className="jokes-list-title-positioner">
+                <div className="jokes-list-title-container">
+                  <p id="jokes-list-title">FAVORITE JOKES</p>
+                </div>
+              </div>
               <ListOfFavoriteJokes favorites={favorites} />
             </div>
           </div>

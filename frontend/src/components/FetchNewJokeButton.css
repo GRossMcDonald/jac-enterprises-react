@@ -2,4 +2,12 @@ button {
   user-select: none;
   cursor: pointer;
   font-size: 20px;
+  padding: 3px 30px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #011951;
+  color: white;
+  border: solid 5px white;
+  border-radius: 10px;
 }

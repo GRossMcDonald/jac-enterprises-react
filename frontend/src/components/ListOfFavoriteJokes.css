@@ -11,3 +11,7 @@
 .jokes-list {
   text-align: center;
 }
+
+.jokes-list li {
+  padding-bottom: 20px;
+}
