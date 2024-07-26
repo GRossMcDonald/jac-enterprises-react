@@ -1,0 +1,34 @@
+#joke-button,
+#save-joke-button {
+  user-select: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 30px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #011951;
+  color: white;
+  border: solid 5px white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 920px) {
+  #joke-button,
+  #save-joke-button {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #joke-button,
+  #save-joke-button {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 585px) {
+  #joke-button,
+  #save-joke-button {
+    font-size: 15px;
+  }
+}

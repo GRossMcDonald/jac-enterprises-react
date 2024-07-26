@@ -1,3 +1,6 @@
+/**I only made edits where I left a comment. 
+Everything looks pretty decent and seems to be functional.**/
+
 a {
   text-decoration: none;
   color: white;
@@ -45,6 +48,7 @@ li {
   justify-content: end;
   align-content: center;
   flex: 1 1 auto;
+  padding-top: 1em; /***** Added this to better align the text in the nav menu *****/
 }
 .navlinks li {
   display: inline;
@@ -103,6 +107,24 @@ li {
   .navlinks,
   .navlinks-container {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .navlinks li {
+    /****Reshaping padding and font-size just for the smaller screens****/
+    padding: 5px 5px; /****Could just make another @media potentially, but this is already hard*****/
+    font-size: 1.2em;
+  }
+
+  .navlinks-container.is-open {
+    display: block;
+    border-top: 2px solid #fff; /****Added just for some visible separation****/
   }
   .navbar .hamburger,
   .navbar .bar {

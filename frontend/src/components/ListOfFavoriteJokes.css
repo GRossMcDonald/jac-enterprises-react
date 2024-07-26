@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ListOfFavoriteJokes {
+  text-align: center;
+}
+
+.jokes-list {
+  text-align: center;
+}
+
+.jokes-list li {
+  padding-bottom: 25px;
+}

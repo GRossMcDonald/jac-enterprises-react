@@ -13,7 +13,7 @@ function App() {
   const [nasaTitle, setTitle] = useState("");
   const [nasaImage, setImage] = useState("");
   const [nasaCaption, setCaption] = useState("");
-  const [joke, setJoke] = useState("");
+  const [joke, setJoke] = useState("Click the button to have a laugh!");
   const [favorites, setFavorites] = useState([]);
 
   return (
