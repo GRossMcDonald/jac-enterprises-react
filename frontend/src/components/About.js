@@ -9,13 +9,15 @@ function About() {
       <Navbar />
       <div className="about-info">
         <ul>
-          <li className="student">
-            <img
-              src={require("../components/images/DeidraPic.png")}
-              alt="Deidra"
-              width="200px"
-              height="200px"
-            />
+          <li className="student-section">
+            <div className="student-pic">
+              <img
+                src={require("../components/images/DeidraPic.png")}
+                alt="Deidra"
+                width="200px"
+                height="200px"
+              />
+            </div>
 
             <p className="bio">
               <h2 className="student-name">Deidra Zamonski-Blake</h2>
@@ -26,12 +28,15 @@ function About() {
             </p>
           </li>
           <li className="student">
-            <img
-              src={require("../components/images/RossPic.png")}
-              alt="Ross"
-              width="200px"
-              height="200px"
-            ></img>
+            <div className="student-pic">
+              <img
+                src={require("../components/images/RossPic.png")}
+                className="student-pic"
+                alt="Ross"
+                width="200px"
+                height="200px"
+              ></img>
+            </div>
 
             <p className="bio">
               <h2 className="student-name">Ross McDonald</h2>
@@ -43,12 +48,15 @@ function About() {
             </p>
           </li>
           <li className="student">
-            <img
-              src={require("../components/images/KatePic.jpg")}
-              alt="Kate"
-              width="200px"
-              height="200px"
-            />
+            <div className="student-pic">
+              <img
+                src={require("../components/images/KatePic.jpg")}
+                alt="Kate"
+                width="200px"
+                height="200px"
+              />
+            </div>
+
             <p className="bio">
               <h2 className="student-name">Kate Locke</h2>
               Kate is a full-stack development student at We Can Code it with a

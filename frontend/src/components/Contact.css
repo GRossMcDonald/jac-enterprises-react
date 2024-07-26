@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-h1 {
+.contact-header {
   text-decoration: underline;
 }
 .contact-info {
@@ -21,16 +21,18 @@ h1 {
   width: 50%;
   padding-top: 50px;
 }
-li {
+.contact-item {
   padding: 20px;
+
   font-weight: 300;
 }
-h2 {
-  font-size: 25px;
-  font-weight: 350;
-}
+
 .email-link {
   color: black;
   font-size: 20px;
   text-decoration: underline;
+}
+
+.email-link:hover {
+  color: rgb(18, 18, 73);
 }

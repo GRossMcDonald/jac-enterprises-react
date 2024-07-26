@@ -8,25 +8,22 @@ function Contact() {
       <Navbar />
       <div className="contact-info">
         <ul>
-          <li>
+          <li className="contact-item">
             <h1 className="contact-header">Contact Our Team!</h1>
           </li>
-          <li>
-            <h2>Deidra Zamonski-Blake</h2>
+          <li className="contact-item">
             <a href="deidra.zamonskiblake@gmail.com" className="email-link">
-              Send E-mail
+              E-mail Deidra Zamonski-Blake
             </a>
           </li>
-          <li>
-            <h2>Ross McDonald:</h2>
+          <li className="contact-item">
             <a href="mailto:Ross_McDonald@outlook.com" className="email-link">
-              Send E-mail
+              E-mail Ross McDonald
             </a>
           </li>
-          <li>
-            <h2>Katlyn Locke</h2>
+          <li className="contact-item">
             <a href="mailto:katlynlocke1028@gmail.com" className="email-link">
-              Send E-Mail
+              E-Mail Kate Locke
             </a>
           </li>
         </ul>
