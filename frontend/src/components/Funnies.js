@@ -10,7 +10,7 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
   return (
     <div className="Funnies">
       <Navbar />
-      <div className="content">
+      <div className="content-funnies">
         <div className="horizontal">
           <div className="left-horizontal">
             <div className="laughing-kids-container">
