@@ -7,7 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen((open) => !open);
+    setIsOpen((isOpen) => !isOpen);
   };
 
   return (
@@ -17,7 +17,7 @@ function Navbar() {
           <p>COSMONAUTICA</p>
         </Link>
       </div> {/***If isOpen=true then the class 'is-open' is added to this div***/}
-      <div className={`navlinks-container ${isOpen ? 'is-open' : ''}`}>
+      <div className={`navlinks-container ${isOpen ? "is-open" : ""}`}>
         <ul className="navlinks">
           <Link to="/explore">
             <li className="nav-item">Explore</li>
@@ -33,7 +33,7 @@ function Navbar() {
           </Link>
         </ul>
       </div> {/***If isOpen=true then the class 'active' is added to this div***/}
-      <div className={`hamburger no-user-select ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+      <div className={`hamburger no-user-select ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
