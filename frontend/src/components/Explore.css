@@ -1,5 +1,4 @@
 .explore-container {
-  text-align: center;
   background-color: rgb(4, 12, 12);
   height: 100vh;
   overflow: hidden;
@@ -85,4 +84,12 @@
   border-radius: 1em;
   z-index: 5;
   max-width: 90%;
+}
+
+/**Added so Explore matches Deidra's design for the nav menu**/
+.titillium-title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 40px;
 }

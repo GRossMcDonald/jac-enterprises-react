@@ -1,3 +1,6 @@
+/**I only made edits where I left a comment. 
+Everything looks pretty decent and seems to be functional.**/
+
 a {
   text-decoration: none;
   color: white;
@@ -10,7 +13,7 @@ li {
 .navbar {
   height: 70px;
   width: 100vw;
-  background-color: rgb(4, 12, 12);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,6 +55,7 @@ li {
   justify-content: end;
   align-content: center;
   flex: 1 1 auto;
+  padding-top: 1em; /***** Added this to better align the text in the nav menu *****/
 }
 
 .navlinks li {
@@ -67,7 +71,7 @@ li {
 }
 
 .navlinks li:hover {
-  background-color: rgb(15, 43, 43);
+  background-color: rgb(24, 24, 24);
   cursor: pointer;
 }
 
@@ -105,22 +109,37 @@ li {
   .navlinks li {
     padding: 30px 30px;
   }
-
   .navlinks {
     justify-content: end;
     box-sizing: border-box;
     margin-right: 30px;
   }
-
   .homelink-container {
     margin-left: 50px;
   }
 }
 
-@media only screen and (max-width: 765px) {
-  .navlinks,
+@media only screen and (max-width: 920px) {
   .navlinks-container {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .navlinks li {
+    /****Reshaping padding and font-size just for the smaller screens****/
+    padding: 5px 5px; /****Could just make another @media potentially, but this is already hard*****/
+    font-size: 1.2em;
+  }
+
+  .navlinks-container.is-open {
+    display: block;
+    border-top: 2px solid #fff; /****Added just for some visible separation****/
   }
 
   .navbar .hamburger,
@@ -128,8 +147,8 @@ li {
     display: block;
   }
 
-  .navbar {
-    background-color: #001b2a;
+  .hamburger .bar {
+    transition: 0.3s; /***Just defining transition time for toggling hamburger active (0.3s is default so this isn't really needed, but just in case(?)***/
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -142,5 +161,18 @@ li {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /*Just specified further because it wasn't changing for me*/
+  .homelink-container.titillium-title {
+    font-size: 30px;
+  }
+
+  .homelink-container {
+    margin-left: 35px;
+  }
+
+  .hamburger {
+    margin-right: -10px;
   }
 }
