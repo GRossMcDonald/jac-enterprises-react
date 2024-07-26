@@ -10,7 +10,11 @@ function About() {
       <h1>Meet Our Team!</h1>
       <div className="about-info">
         <div className="student">
-          <img src={require("../img/Deidra.png")} alt="Deidra" width="200px" />
+          <img
+            src={require("../components/images/Deidra.png")}
+            alt="Deidra"
+            width="200px"
+          />
           <p className="bio">
             <h2 className="student-name">Deidra Zamonski-Blake</h2>
             Deidra is an entry-level full-stack web developer located in
@@ -20,7 +24,11 @@ function About() {
           </p>
         </div>
         <div className="student">
-          <img src={require("../img/Ross.png")} alt="Ross" width="200px"></img>
+          <img
+            src={require("../components/images/Ross.png")}
+            alt="Ross"
+            width="200px"
+          ></img>
 
           <p className="bio">
             <h2 className="student-name">Ross McDonald</h2>
@@ -32,7 +40,11 @@ function About() {
           </p>
         </div>
         <div className="student">
-          <img src={require("../img/Kate.jpg")} alt="Kate" width="200px" />
+          <img
+            src={require("../components/images/Kate.jpg")}
+            alt="Kate"
+            width="200px"
+          />
           <p className="bio">
             <h2 className="student-name">Kate Locke</h2>
             Kate is a full-stack development student at We Can Code it with a
