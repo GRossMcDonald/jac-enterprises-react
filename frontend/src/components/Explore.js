@@ -16,13 +16,6 @@ function Explore({
     <div className="explore-container">
       <Navbar />
       <div className="content">
-        <div className="image-button">
-          <ImageButton
-            setTitle={setTitle}
-            setImage={setImage}
-            setCaption={setCaption}
-          />
-        </div>
         <h2 className="title">{nasaTitle}</h2>
         {!nasaImage ? (
           <img
@@ -33,6 +26,18 @@ function Explore({
         ) : (
           <img className="image" src={nasaImage} alt="Space" />
         )}
+        <div className="button">
+          <ImageButton
+            setTitle={setTitle}
+            setImage={setImage}
+            setCaption={setCaption}
+          />
+          <SaveButton
+            nasaTitle={nasaTitle}
+            nasaImage={nasaImage}
+            nasaCaption={nasaCaption}
+          />
+        </div>
         {!nasaCaption ? (
           <p className="caption">
             Today's astronomical wonders are just a button click away.
@@ -40,16 +45,8 @@ function Explore({
         ) : (
           <p className="caption">{nasaCaption}</p>
         )}
-        <div className="save-button">
-          <SaveButton
-            nasaTitle={nasaTitle}
-            nasaImage={nasaImage}
-            nasaCaption={nasaCaption}
-          />
-        </div>
       </div>
     </div>
   );
 }
-
 export default Explore;
