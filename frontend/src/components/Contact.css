@@ -9,6 +9,10 @@
   background-position: center;
   background-size: cover;
 }
+
+h1 {
+  text-decoration: underline;
+}
 .contact-info {
   background-color: rgba(255, 255, 255, 0.266);
   border: 3px solid black;

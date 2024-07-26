@@ -7,7 +7,6 @@ function About() {
   return (
     <div className="bio-container">
       <Navbar />
-      <h1>Meet Our Team!</h1>
       <div className="about-info">
         <div className="student">
           <img

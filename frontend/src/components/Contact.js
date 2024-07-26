@@ -9,6 +9,9 @@ function Contact() {
       <div className="contact-info">
         <ul>
           <li>
+            <h1 className="contact-header">Contact Our Team!</h1>
+          </li>
+          <li>
             <h2>Deidra Zamonski-Blake</h2>
             <a href="deidra.zamonskiblake@gmail.com" className="email-link">
               Send E-mail
