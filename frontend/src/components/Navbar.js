@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -27,7 +28,7 @@ function Navbar() {
           </Link>
         </ul>
       </div>
-      <div className="hamburger">
+      <div className="hamburger no-user-select">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>

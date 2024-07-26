@@ -7,11 +7,12 @@ function About() {
   return (
     <div className="bio-container">
       <Navbar />
+      <h1>Meet Our Team!</h1>
       <div className="about-info">
         <div className="student">
           <img src={require("../img/Deidra.png")} alt="Deidra" width="200px" />
           <p className="bio">
-            <h2>Deidra Zamonski-Blake</h2>
+            <h2 className="student-name">Deidra Zamonski-Blake</h2>
             Deidra is an entry-level full-stack web developer located in
             Columbus, OH. She and her husband of three years, Christopher, had
             their first child, Beorn, at the end of 2023 and she will soon be a
@@ -22,7 +23,7 @@ function About() {
           <img src={require("../img/Ross.png")} alt="Ross" width="200px"></img>
 
           <p className="bio">
-            <h2>Ross McDonald</h2>
+            <h2 className="student-name">Ross McDonald</h2>
             Ross is a We Can Code It student with a background in political
             science. He graduated from OSU with a bachelors in political
             science. Since then he's aspired to become a video game developer.
@@ -33,7 +34,7 @@ function About() {
         <div className="student">
           <img src={require("../img/Kate.jpg")} alt="Kate" width="200px" />
           <p className="bio">
-            <h2>Kate Locke</h2>
+            <h2 className="student-name">Kate Locke</h2>
             Kate is a full-stack development student at We Can Code it with a
             background in communication studies. In 2017 she graduated from Kent
             State University and has since found an interest in programming. She
