@@ -162,4 +162,16 @@ li {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .homelink-container.titillium-title {
+    font-size: 30px;
+  }
+
+  .homelink-container {
+    margin-left: 35px;
+  }
+
+  .hamburger {
+    margin-right: -10px;
+  }
 }

@@ -15,7 +15,7 @@ function Explore({
   return (
     <div className="explore-container">
       <Navbar />
-      <div className="content">
+      <div className="content-explore">
         <h2 className="title">{nasaTitle}</h2>
         {!nasaImage ? (
           <img
