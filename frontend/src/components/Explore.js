@@ -1,6 +1,7 @@
 import React from "react";
 import ImageButton from "./ImageButton";
 import SaveButton from "./SaveButton";
+import Navbar from "./Navbar";
 import "./Explore.css";
 
 function Explore({
@@ -13,19 +14,40 @@ function Explore({
 }) {
   return (
     <div className="explore-container">
-      <ImageButton
-        setTitle={setTitle}
-        setImage={setImage}
-        setCaption={setCaption}
-      />
-      <h2 className="title">{nasaTitle}</h2>
-      <img className="image" src={nasaImage} alt="Space Image" />
-      <p className="caption">{nasaCaption}</p>
-      <SaveButton
-        nasaTitle={nasaTitle}
-        nasaImage={nasaImage}
-        nasaCaption={nasaCaption}
-      />
+      <Navbar />
+      <div className="content">
+        <div className="image-button">
+          <ImageButton
+            setTitle={setTitle}
+            setImage={setImage}
+            setCaption={setCaption}
+          />
+        </div>
+        <h2 className="title">{nasaTitle}</h2>
+        {!nasaImage ? (
+          <img
+            className="image"
+            src={require("./images/explore.png")}
+            alt="Space"
+          />
+        ) : (
+          <img className="image" src={nasaImage} alt="Space" />
+        )}
+        {!nasaCaption ? (
+          <p className="caption">
+            Today's astronomical wonders are just a button click away.
+          </p>
+        ) : (
+          <p className="caption">{nasaCaption}</p>
+        )}
+        <div className="save-button">
+          <SaveButton
+            nasaTitle={nasaTitle}
+            nasaImage={nasaImage}
+            nasaCaption={nasaCaption}
+          />
+        </div>
+      </div>
     </div>
   );
 }

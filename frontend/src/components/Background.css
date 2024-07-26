@@ -3,7 +3,7 @@
   top: 50px;
   height: calc(100vh - 50px);
   width: 100vw;
-  background-image: url("../img/stars.jpeg");
+  background-image: url("./images/stars.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 765px) {
   .Background {
-    background-image: url("../img/moon.jpg");
+    background-image: url("./images/moon.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% auto;
