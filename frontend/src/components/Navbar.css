@@ -5,11 +5,9 @@ a {
   text-decoration: none;
   color: white;
 }
-
 li {
   list-style: none;
 }
-
 .navbar {
   height: 70px;
   width: 100vw;
@@ -22,12 +20,10 @@ li {
   left: 0;
   z-index: 1000;
 }
-
 .navbar .flex {
   display: inline-block;
   flex: 1 1 auto;
 }
-
 .homelink-container {
   min-width: 25vw;
   display: flex;
@@ -35,21 +31,18 @@ li {
   box-sizing: border-box;
   margin-left: 40px;
 }
-
 .titillium-title {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 40px;
 }
-
 .navlinks-container {
   min-width: fit-content;
   height: 100%;
   display: flex;
   align-content: center;
 }
-
 .navlinks {
   display: flex;
   justify-content: end;
@@ -57,7 +50,6 @@ li {
   flex: 1 1 auto;
   padding-top: 1em; /***** Added this to better align the text in the nav menu *****/
 }
-
 .navlinks li {
   display: inline;
   flex: 1;
@@ -69,24 +61,19 @@ li {
   height: 100%;
   box-sizing: border-box;
 }
-
 .navlinks li:hover {
   background-color: rgb(24, 24, 24);
   cursor: pointer;
 }
-
 .white-text {
   color: white;
 }
-
 .relative {
   position: relative;
 }
-
 .no-user-select {
   user-select: none;
 }
-
 .hamburger {
   display: none;
   cursor: pointer;
@@ -94,7 +81,6 @@ li {
   position: fixed;
   right: 40px;
 }
-
 .bar {
   display: none;
   width: 25px;
@@ -104,7 +90,6 @@ li {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-
 @media only screen and (max-width: 1115px) {
   .navlinks li {
     padding: 30px 30px;
@@ -118,8 +103,8 @@ li {
     margin-left: 50px;
   }
 }
-
 @media only screen and (max-width: 920px) {
+  .navlinks,
   .navlinks-container {
     display: none;
     flex-direction: column;
@@ -141,24 +126,16 @@ li {
     display: block;
     border-top: 2px solid #fff; /****Added just for some visible separation****/
   }
-
   .navbar .hamburger,
   .navbar .bar {
     display: block;
   }
-
-  .navbar {
-    background-color: #001b2a;
-  }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
@@ -166,11 +143,9 @@ li {
   .homelink-container.titillium-title {
     font-size: 30px;
   }
-
   .homelink-container {
     margin-left: 35px;
   }
-
   .hamburger {
     margin-right: -10px;
   }

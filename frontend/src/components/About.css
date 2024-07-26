@@ -1,38 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-.contact-container {
+
+.bio-container {
   display: flex;
+  justify-content: center;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  background-image: url("../components/images/SatelliteCartoon.jpg");
+  background-image: url("../components/images/SpaceshipCartoon.jpg");
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 150vh;
   background-position: center;
   background-size: cover;
 }
 
-.contact-header {
-  text-decoration: underline;
-}
-.contact-info {
-  background-color: rgba(255, 255, 255, 0.266);
+.about-info {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.466);
   border: 3px solid black;
+  border-radius: 20px;
   padding: auto;
   margin: auto;
   width: 50%;
-  padding-top: 50px;
-}
-.contact-item {
-  padding: 20px;
-
-  font-weight: 300;
 }
 
-.email-link {
-  color: black;
-  font-size: 20px;
+.student-section {
+  display: inline;
+  text-align: center;
+  justify-content: center;
+}
+
+.student-name {
   text-decoration: underline;
+  font-weight: 600;
 }
 
-.email-link:hover {
-  color: rgb(18, 18, 73);
+.student-pic img {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.bio {
+  display: inline;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 50%;
 }

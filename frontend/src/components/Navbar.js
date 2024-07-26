@@ -16,7 +16,8 @@ function Navbar() {
         <Link to="/">
           <p>COSMONAUTICA</p>
         </Link>
-      </div> {/***If isOpen=true then the class 'is-open' is added to this div***/}
+      </div>
+      {/***If isOpen=true then the class 'is-open' is added to this div***/}
       <div className={`navlinks-container ${isOpen ? "is-open" : ""}`}>
         <ul className="navlinks">
           <Link to="/explore">
@@ -29,11 +30,17 @@ function Navbar() {
             <li className="nav-item">Contact</li>
           </Link>
           <Link to="/about">
-            <li className="nav-item" id="last-navlink">About</li>
+            <li className="nav-item" id="last-navlink">
+              About
+            </li>
           </Link>
         </ul>
-      </div> {/***If isOpen=true then the class 'active' is added to this div***/}
-      <div className={`hamburger no-user-select ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
+      </div>
+      {/***If isOpen=true then the class 'active' is added to this div***/}
+      <div
+        className={`hamburger no-user-select ${isOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
@@ -41,9 +48,5 @@ function Navbar() {
     </div>
   );
 }
-
-/**The only alternative to this is to place the hook in App.js and 
- * pass in the Navbar props to every single component page. I don't know what the standard is,
- * but that seems like a ridiculous way to go about this.**/
 
 export default Navbar;
