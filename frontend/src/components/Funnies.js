@@ -1,29 +1,24 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./Navbar.css";
+import ShowFavoriteJokesButton from "./ShowFavoriteJokesButton";
+import FetchNewJokeButton from "./FetchNewJokeButton";
+import SaveJokeButton from "./SaveJokeButton";
+import ListOfFavoriteJokes from "./ListOfFavoriteJokes";
+import "./Funnies.css";
 
-function Funnies() {
-  const fetchJokes = ({ setFavorites }) => {
-    fetch("http://localhost:8080/api/jokes")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not okay.");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setFavorites(data);
-      })
-      .catch((error) => {
-        console.error(
-          "There was an issue fetching the favorites jokes: " + error
-        );
-      });
-  };
+function Funnies({ joke, setJoke, favorites, setFavorites }) {
   return (
     <div className="Funnies">
       <Navbar />
-      <button onClick={fetchJokes}>Show Favorite Jokes</button>
+      <div className="joke-container">
+        <p id="testing-joke">{joke}</p>
+      </div>
+      <div className="test">
+        <SaveJokeButton joke={joke} />
+        <FetchNewJokeButton setJoke={setJoke} />
+        <ShowFavoriteJokesButton setFavorites={setFavorites} />
+      </div>
+      <ListOfFavoriteJokes favorites={favorites} />
     </div>
   );
 }
