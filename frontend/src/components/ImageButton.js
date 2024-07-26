@@ -27,7 +27,7 @@ function ImageButton({ setTitle, setImage, setCaption }) {
       });
   };
 
-  return <button onClick={fetchApod}>Get Astronomy Fact</button>;
+  return <button className="explore-buttons" onClick={fetchApod}>Get Astronomy Fact</button>;
 }
 
 export default ImageButton;
