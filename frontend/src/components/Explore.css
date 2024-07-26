@@ -15,11 +15,16 @@
   align-items: center;
 }
 
-.image-button,
-.save-button {
+.button {
   padding: 1.5em;
-  width: auto;
-  cursor: pointer;
+  display: block;
+}
+
+.explore-buttons {
+  border-radius: 0.5em;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
@@ -37,16 +42,19 @@
   box-shadow: 5px 5px 2px rgba(16, 16, 66, 0.6);
   margin-bottom: 1em;
   position: relative;
+  z-index: 5;
 }
 
 .caption {
   text-align: center;
-  background-color: rgba(16, 16, 66, 0.411);
+  background-color: rgba(16, 16, 66, 0.6);
   color: #fff;
   padding: 1em;
   border-radius: 1em;
+  z-index: 5;
 }
 
-.explore-buttons {
-  padding: 10px;
+.image-button,
+.save-button {
+  padding: 1.5em;
 }

@@ -16,12 +16,21 @@ function Explore({
     <div className="explore-container">
       <Navbar />
       <div className="content">
-        <div className="image-button">
-          <ImageButton
-            setTitle={setTitle}
-            setImage={setImage}
-            setCaption={setCaption}
-          />
+        <div className="explore-buttons">
+          <div className="save-button">
+            <SaveButton
+              nasaTitle={nasaTitle}
+              nasaImage={nasaImage}
+              nasaCaption={nasaCaption}
+            />
+          </div>
+          <div className="image-button">
+            <ImageButton
+              setTitle={setTitle}
+              setImage={setImage}
+              setCaption={setCaption}
+            />
+          </div>
         </div>
         <h2 className="title">{nasaTitle}</h2>
         {!nasaImage ? (
@@ -40,13 +49,6 @@ function Explore({
         ) : (
           <p className="caption">{nasaCaption}</p>
         )}
-        <div className="save-button">
-          <SaveButton
-            nasaTitle={nasaTitle}
-            nasaImage={nasaImage}
-            nasaCaption={nasaCaption}
-          />
-        </div>
       </div>
     </div>
   );
