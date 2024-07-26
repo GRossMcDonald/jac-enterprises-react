@@ -71,27 +71,17 @@
   border: 3px solid #fff;
   box-shadow: 6px 6px 2px rgba(16, 16, 66, 0.9);
   position: relative;
-  z-index: 5;
-  margin: 0;
-  margin-top: 1em;
 }
 
 .caption {
   text-align: center;
-  background-color: rgba(16, 16, 66, 0.8);
-  text-shadow: 2px 2px 1px black;
+  background-color: rgba(16, 16, 66, 0.411);
   color: #fff;
   padding: 1em;
   margin: 1.5em;
   border-radius: 1em;
-  z-index: 5;
-  max-width: 90%;
 }
 
-/**Added so Explore matches Deidra's design for the nav menu**/
-.titillium-title {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  font-size: 40px;
+.explore-buttons {
+  padding: 10px;
 }

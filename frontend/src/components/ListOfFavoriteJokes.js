@@ -1,8 +1,9 @@
 import React from "react";
+import "./ListOfFavoriteJokes.css";
 
 function ListOfFavoriteJokes({ favorites }) {
   return (
-    <div className="jokes-list-container">
+    <div className="ListOfFavoriteJokes">
       <ul className="jokes-list">
         {favorites.map((favorite) => (
           <li key={favorite.id}>{favorite.text}</li>
