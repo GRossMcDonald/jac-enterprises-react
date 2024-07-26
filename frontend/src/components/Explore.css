@@ -9,6 +9,24 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .content .image {
+    max-width: 80%;
+    position: relative;
+    margin-top: 0;
+  }
+  .explore-container {
+    background-image: none;
+    background-color: rgba(16, 16, 66, 0.9);
+  }
+  .explore-container .content {
+    padding-top: 2em;
+  }
+  .content .title {
+    padding-bottom: 1em;
+  }
+}
+
 .content {
   height: calc(100vh - 70px);
   width: 100vw;
