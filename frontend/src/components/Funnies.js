@@ -37,7 +37,9 @@ function Funnies({ joke, setJoke, favorites, setFavorites }) {
                   <p id="jokes-list-title">FAVORITE JOKES</p>
                 </div>
               </div>
-              <ListOfFavoriteJokes favorites={favorites} />
+              <div className="jokes-list-container">
+                <ListOfFavoriteJokes favorites={favorites} />
+              </div>
             </div>
           </div>
         </div>
