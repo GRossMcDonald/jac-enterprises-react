@@ -89,5 +89,27 @@
   max-width: 90%;
 }
 
+.explore-favorites-list {
+  text-align: center;
+  background-color: rgba(16, 16, 66, 0.8);
+  text-shadow: 2px 2px 1px black;
+  color: #fff;
+  padding: 0;
+  margin: 1.5em 0;
+  border-radius: 1em;
+  z-index: 5;
+  max-width: 90%;
+  list-style-type: none;
+}
+
+.favorite-fact {
+  text-align: center;
+  background-color: rgba(16, 16, 66, 0.8);
+  color: #fff;
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 1em;
+}
+
 
 

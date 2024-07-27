@@ -2,7 +2,7 @@ import React from "react";
 
 function SaveButton({ nasaTitle, nasaImage, nasaCaption }) {
   const saveApod = () => {
-    fetch("http://localhost:8080/api/nasa", {
+    fetch("http://localhost:8080/api/explore", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

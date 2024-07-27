@@ -129,16 +129,24 @@ li {
     display: block;
     border-top: 2px solid #fff; /****Added just for some visible separation****/
   }
+
+  .navlinks-container.is-open a {
+    padding-left: 1em;
+  }
+
   .navbar .hamburger,
   .navbar .bar {
     display: block;
   }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
@@ -146,9 +154,11 @@ li {
   .homelink-container.titillium-title {
     font-size: 30px;
   }
+
   .homelink-container {
     margin-left: 35px;
   }
+
   .hamburger {
     margin-right: -10px;
   }

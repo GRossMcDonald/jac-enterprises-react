@@ -1,6 +1,8 @@
 import React from "react";
 import ImageButton from "./ImageButton";
 import SaveButton from "./SaveButton";
+import ExploreFavoritesList from "./ExploreFavoritesList";
+import ExploreFavoritesButton from "./ExploreFavoritesButton";
 import Navbar from "./Navbar";
 import "./Explore.css";
 
@@ -11,6 +13,8 @@ function Explore({
   setTitle,
   setImage,
   setCaption,
+  exploreFavorites,
+  setExploreFavorites,
 }) {
   return (
     <div className="explore-container">
@@ -37,6 +41,7 @@ function Explore({
             nasaImage={nasaImage}
             nasaCaption={nasaCaption}
           />
+          <ExploreFavoritesButton setExploreFavorites={setExploreFavorites} />
         </div>
         {!nasaCaption ? (
           <p className="caption">
@@ -45,6 +50,7 @@ function Explore({
         ) : (
           <p className="caption">{nasaCaption}</p>
         )}
+        <ExploreFavoritesList exploreFavorites={exploreFavorites} />
       </div>
     </div>
   );
