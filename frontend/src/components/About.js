@@ -18,9 +18,8 @@ function About() {
                 height="200px"
               />
             </div>
-
+            <h2 className="student-name">Deidra Zamonski-Blake</h2>
             <p className="bio">
-              <h2 className="student-name">Deidra Zamonski-Blake</h2>
               Deidra is an entry-level full-stack web developer located in
               Columbus, OH. She and her husband of three years, Christopher, had
               their first child, Beorn, at the end of 2023 and she will soon be
@@ -37,9 +36,8 @@ function About() {
                 height="200px"
               ></img>
             </div>
-
+            <h2 className="student-name">Ross McDonald</h2>
             <p className="bio">
-              <h2 className="student-name">Ross McDonald</h2>
               Ross is a We Can Code It student with a background in political
               science. He graduated from OSU with a bachelors in political
               science. Since then he's aspired to become a video game developer.
@@ -56,9 +54,8 @@ function About() {
                 height="200px"
               />
             </div>
-
+            <h2 className="student-name">Kate Locke</h2>
             <p className="bio">
-              <h2 className="student-name">Kate Locke</h2>
               Kate is a full-stack development student at We Can Code it with a
               background in communication studies. In 2017 she graduated from
               Kent State University and has since found an interest in
