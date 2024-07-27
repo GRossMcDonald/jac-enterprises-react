@@ -9,7 +9,7 @@ function About() {
       <Navbar />
       <div className="about-info">
         <ul>
-          <li className="student-section">
+          <li className="student">
             <div className="student-pic">
               <img
                 src={require("../components/images/DeidraPic.png")}

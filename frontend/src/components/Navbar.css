@@ -104,7 +104,10 @@ li {
   }
 }
 @media only screen and (max-width: 920px) {
-  .navlinks,
+  .navlinks-container.is-open a {
+    padding-left: 1em;
+  }
+
   .navlinks-container {
     display: none;
     flex-direction: column;
@@ -148,5 +151,11 @@ li {
   }
   .hamburger {
     margin-right: -10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navlinks-container.is-open a {
+    padding-left: 0;
   }
 }
