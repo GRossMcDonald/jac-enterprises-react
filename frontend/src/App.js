@@ -15,6 +15,7 @@ function App() {
   const [nasaCaption, setCaption] = useState("");
   const [joke, setJoke] = useState("Click the button to have a laugh!");
   const [favorites, setFavorites] = useState([]);
+  const [exploreFavorites, setExploreFavorites] = useState([]);
 
   return (
     <>
@@ -43,11 +44,13 @@ function App() {
                 nasaTitle={nasaTitle}
                 nasaImage={nasaImage}
                 nasaCaption={nasaCaption}
+                setExploreFavorites={setExploreFavorites}
+                exploreFavorites={exploreFavorites}
               />
             }
           />
           <Route path="/contact" element={<Contact />} />
-          {<Route path="/about" element={<About />} />}
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </>

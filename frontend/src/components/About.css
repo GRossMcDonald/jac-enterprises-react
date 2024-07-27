@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   font-family: "Titillium Web", sans-serif;
-  text-align: center;
   background-image: url("../components/images/SpaceshipCartoon.jpg");
   background-repeat: no-repeat;
   height: 150vh;
@@ -13,6 +12,7 @@
 }
 
 .about-info {
+  text-align: center;
   display: flex;
   background-color: rgba(255, 255, 255, 0.466);
   border: 3px solid black;
@@ -22,10 +22,15 @@
   width: 50%;
 }
 
+.student {
+  padding: 1em;
+}
+
 .student-section {
   display: inline;
   text-align: center;
   justify-content: center;
+  padding: 1em;
 }
 
 .student-name {
@@ -44,4 +49,16 @@
   font-weight: 500;
   font-size: 20px;
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .about-info {
+  margin-top: 10em;
+  width: 100%;
+  }  
+
+  .bio {
+    font-size: 1em;
+    font-weight: bold;
+  }
 }
