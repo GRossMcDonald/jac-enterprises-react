@@ -17,14 +17,13 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.266);
   border: 3px solid black;
-  padding: auto;
-  margin: auto;
+  border-radius: 20px;
   width: 50%;
-  padding-top: 50px;
+  margin: auto;
+  padding: auto;
 }
 .contact-item {
   padding: 20px;
-
   font-weight: 300;
 }
 

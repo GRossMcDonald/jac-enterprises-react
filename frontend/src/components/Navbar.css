@@ -104,6 +104,10 @@ li {
   }
 }
 @media only screen and (max-width: 920px) {
+  .navlinks-container.is-open a {
+    padding-left: 1em;
+  }
+
   .navlinks-container {
     display: none;
     flex-direction: column;
