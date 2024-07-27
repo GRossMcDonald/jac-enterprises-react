@@ -12,7 +12,10 @@ function Contact() {
             <h1 className="contact-header">Contact Our Team!</h1>
           </li>
           <li className="contact-item">
-            <a href="deidra.zamonskiblake@gmail.com" className="email-link">
+            <a
+              href="mailto:deidra.zamonskiblake@gmail.com"
+              className="email-link"
+            >
               E-mail Deidra Zamonski-Blake
             </a>
           </li>
